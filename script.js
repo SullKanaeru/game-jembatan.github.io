@@ -8,7 +8,7 @@ function moveSelected() {
 
   if (selectedPeople.length < 1 || selectedPeople.length > 2) {
     document.getElementById("message").innerText =
-      "Please select 1 or 2 people.";
+      "Hanya 2 orang yang bisa menyeberang.";
     return;
   }
 
@@ -21,11 +21,11 @@ function moveSelected() {
 
   // Update time and check if the limit has been exceeded
   time += maxTime;
-  document.getElementById("time").innerText = `Time: ${time} mins`;
+  document.getElementById("time").innerText = `Waktu: ${time} menit`;
 
   if (time > 17) {
     document.getElementById("message").innerText =
-      "You exceeded the time limit!";
+      "Yah.. kamu melebihi batas waktu";
     return;
   }
 
@@ -45,7 +45,7 @@ function moveSelected() {
   // Check if all people are on the right side
   if (leftList.children.length === 0) {
     document.getElementById("message").innerText =
-      "Congratulations! You solved the puzzle!";
+      "Selamat! Kamu membantu mereka menyeberang jembatan";
   } else {
     document.getElementById("message").innerText = "";
   }

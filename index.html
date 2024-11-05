@@ -8,27 +8,32 @@
   </head>
   <body>
     <div class="container">
-      <h1>Bridge and Torch Puzzle</h1>
-      <p>Help the four people cross the bridge in under 17 minutes!</p>
+      <h1>Jembatan Gelap</h1>
+      <p>
+        Ayo bantu 4 orang ini menyeberang jembatan yang gelap👻 dalam waktu 17
+        menit
+      </p>
       <div id="bridge">
         <div class="side left-side">
-          <h2>Left Side</h2>
+          <h2>Sisi Kiri</h2>
           <ul id="left-list">
-            <li data-time="1">Person A - 1 min</li>
-            <li data-time="2">Person B - 2 mins</li>
-            <li data-time="5">Person C - 5 mins</li>
-            <li data-time="10">Person D - 10 mins</li>
+            <li data-time="1">Arkan - 1 menit</li>
+            <li data-time="2">Fajar - 2 menit</li>
+            <li data-time="5">Cecel - 5 menit</li>
+            <li data-time="10">Dimas - 10 menit</li>
           </ul>
         </div>
+        <div id="torch">🌉</div>
         <div id="torch">🔦</div>
+        <div id="torch">🌉</div>
         <div class="side right-side">
-          <h2>Right Side</h2>
+          <h2>Sisi Kanan</h2>
           <ul id="right-list"></ul>
         </div>
       </div>
       <div class="controls">
-        <button onclick="moveSelected()">Move Selected</button>
-        <p id="time">Time: 0 mins</p>
+        <button onclick="moveSelected()">Seberangkan Mereka</button>
+        <p id="time">Waktu: 0 menit</p>
         <p id="message"></p>
       </div>
     </div>
